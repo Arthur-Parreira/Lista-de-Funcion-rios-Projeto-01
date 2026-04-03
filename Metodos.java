@@ -98,11 +98,11 @@ public class Metodos {
             } else { //Se "name" estiver vazio, retorna ERRO
                 System.out.println("ERRO: o nome não pode estar vazio");
                 System.out.println("---------------------------------------------------");
-                System.out.println("Digite o nome:");
+                System.out.println("Digite o nome do Funcionário:");
             }
         } while (name.isEmpty());
         return nome;
-
+        
     }
         
 
@@ -136,7 +136,7 @@ public class Metodos {
                 } else{
                     System.out.println("ERRO: o número digitado NÃO pode ter caracteres não inteiros");
                     System.out.println("---------------------------------------------------");
-                    System.out.printf("Digite novamento o TELEFONE de " + name + ":");
+                    System.out.println("Digite novamento o TELEFONE de " + name + ":");
                 }
         } while (verificarSeONumeroEInteiro(numeroDeTelefone)==false);
         return telefone;
@@ -147,7 +147,7 @@ public class Metodos {
     public static String numeroFuncionario(String name){
         String telefone = new String();
 
-        System.out.printf("Digite o TELEFONE de %-30s \n", name);
+        System.out.println("Digite o TELEFONE de " + name + ":");
 
         telefone = erroPhone(name);
 
@@ -174,7 +174,7 @@ public class Metodos {
             } else {
                 System.out.println("ERRO: o E-MAIL digitado NÃO contém @");
                 System.out.println("---------------------------------------------------");
-                System.out.printf("Digite novamente o E-MAIL de " + name + ":");
+                System.out.println("Digite novamente o E-MAIL de " + name + ":");
             }
             
         } while (enderecoDeEmail.contains("@")==false);
@@ -189,7 +189,7 @@ public class Metodos {
         String enderecoDeEmail = new String();
         String email = new String();
         
-        System.out.printf("Digite o E-MAIL de %-30s \n", name);
+        System.out.println("Digite o E-MAIL de " + name + ":");
 
         email = erroEmail(name);
 
@@ -223,7 +223,7 @@ public class Metodos {
             } else {
                 System.out.println("ERRO: NÃO inclua LETRAS ou CARACTERES ESPECIAIS");
                 System.out.println("---------------------------------------------------");
-                System.out.printf("Digite novamente o CPF de " + name + ":");
+                System.out.println("Digite novamente o CPF de " + name + ":");
 
             }
         } while (verificarSeONumeroEInteiro(numeroDoCPF)==false);
@@ -235,7 +235,7 @@ public class Metodos {
     public static String cpfFuncionario(String name){
         String cpf = new String();
 
-        System.out.printf("Digite o CPF de %-30s \n", name);
+        System.out.println("Digite o CPF de " + name + ":");
 
         cpf = erroCPF(name);
 
